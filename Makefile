@@ -6,14 +6,13 @@ LDFLAGS = -g ${LIBS}
 
 CXX = clang++
 
-SOURCES := $(wildcard src/*.cpp)
+SOURCES := $(wildcard src/*.cpp) $(wildcard src/RSC/*.cpp) $(wildcard src/RSC/model/*.cpp)
 OBJECTS := $(SOURCES:src/%.cpp=bin/%.o)
 
 all: mkbin options $(OBJECTS) autoemu
 
 mkbin:
-	@mkdir -p bin/io
-	@mkdir -p bin/model
+	@mkdir -p bin/RSC/model
 
 options:
 	@echo autoemu build options:
