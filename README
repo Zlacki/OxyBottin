@@ -1,0 +1,15 @@
+==AutoEmu==
+This program is designed to automate tasks on the game RSCEmulation.
+
+How it works: This program will work in about the same way as AutoRune had.  It will play as a 'middle-man' between the client and the server, with the ability to change packets, ignore packets, and send or recieve its own packets to the client or from the client.
+Since this program makes zero modifications to the actual client, it is virtually undetectable.  Accompanied with the bot itself is a packet updater, written using C++ interfacing with Java via JNI.  It also will grab any cipher keys, if they exist.  The updater should work on about any existing or future RSClassic server, not just RSCEmulation.  Future servers may be considered for mainline support.  We plan on implementing auto-updating features, so if AutoEmu detects changes to packet structures, it automatically updates accordingly.  This isn't fool-proof, as they can drastically modify the client to break my software, but it seems unlikely they will very often, if ever.
+
+Due to the fact that AutoEmu reads all of the same data as the client would, AutoEmu represents a facsimile of the clients internal state at all times, even before the client does.  This results in an easy to use shell bot with optional graphics, as it can act as a client on its own whereas most bots work solely off of the clients data.  We create our own data structures that are identical to the real clients, just by reading data off of packets, making AutoEmu a light-weight C++ version of the RSC client with no graphics of its own.
+
+The only dependency I plan on having is Qt5.  This may change in the future.
+
+I will be writing an accompanying FOSS OCR written in C++ as well.
+
+For scripts, I will be writing an advanced text scripting engine, as well as APIs for Java, Ruby, Perl, Python, PHP, C++, and C.
+
+Let the botting revolution begin.
