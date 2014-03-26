@@ -12,5 +12,6 @@ namespace RSC {
 		std::array<Mob, 500> &getNPCs();
 		void connect(std::string, std::string, uint8_t);
 	};
-};
+}
+
 #endif

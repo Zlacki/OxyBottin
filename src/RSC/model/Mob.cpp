@@ -16,4 +16,4 @@ namespace RSC {
 	void Mob::setY(int y) {
 		this->y = y;
 	}
-};
+}

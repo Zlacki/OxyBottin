@@ -12,6 +12,6 @@ namespace RSC {
 		int getY();
 		void setY(int);
 	};
-};
+}
 
 #endif

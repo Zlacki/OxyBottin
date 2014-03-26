@@ -9,4 +9,4 @@ namespace RSC {
 		/* todo */
 		return;
 	}
-};
+}
