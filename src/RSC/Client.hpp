@@ -2,7 +2,6 @@
 #define _CLIENT_HPP
 
 #include <array>
-#include <strings>
 #include "model/Mob.hpp"
 
 namespace RSC {
